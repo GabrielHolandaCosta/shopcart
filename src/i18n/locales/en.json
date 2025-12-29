@@ -1,0 +1,51 @@
+{
+  "header": {
+    "title": "ShopCart",
+    "cart": "Cart",
+    "items": "items"
+  },
+  "lang": {
+    "pt": "Portuguese",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "banner": {
+    "welcome": "Welcome to ShopCart!",
+    "subtitle": "Find the best products at the best prices"
+  },
+  "categories": {
+    "all": "All",
+    "electronics": "Electronics",
+    "games": "Games",
+    "clothes": "Clothes"
+  },
+  "products": {
+    "title": "Products",
+    "search": "Search products...",
+    "addToCart": "Add to cart",
+    "notFound": "No products found",
+    "notFoundCategory": "No products found in this category",
+    "loading": "Loading products...",
+    "error": "Error loading products. Please try again later."
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyMessage": "Add products to start shopping!",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "remove": "Remove",
+    "close": "Close",
+    "checkout": "Complete order"
+  },
+  "checkout": {
+    "title": "Order registered in cart!",
+    "message": "This is a frontend demonstration project, without backend or real payment.",
+    "close": "Close"
+  },
+  "common": {
+    "price": "Price",
+    "quantity": "Quantity"
+  }
+}
+
