@@ -2,7 +2,8 @@
   "header": {
     "title": "ShopCart",
     "cart": "Cart",
-    "items": "items"
+    "items": "items",
+    "back": "Back"
   },
   "lang": {
     "pt": "Portuguese",
@@ -26,7 +27,9 @@
     "notFound": "No products found",
     "notFoundCategory": "No products found in this category",
     "loading": "Loading products...",
-    "error": "Error loading products. Please try again later."
+    "error": "Error loading products. Please try again later.",
+    "moreComing": "More Products Coming Soon",
+    "moreComingText": "We're working hard to bring you even more amazing products!"
   },
   "cart": {
     "title": "Shopping Cart",
@@ -46,6 +49,24 @@
   "common": {
     "price": "Price",
     "quantity": "Quantity"
+  },
+  "landing": {
+    "title": "Welcome to ShopCart",
+    "subtitle": "Your favorite online store",
+    "description": "Discover a unique shopping experience with the best products and the most competitive prices in the market.",
+    "button": "Enter Store",
+    "feature1": {
+      "title": "Varied Products",
+      "description": "Find everything you need in one place"
+    },
+    "feature2": {
+      "title": "Amazing Prices",
+      "description": "The best prices and special offers for you"
+    },
+    "feature3": {
+      "title": "Fast Delivery",
+      "description": "Receive your products quickly and safely"
+    }
   }
 }
 

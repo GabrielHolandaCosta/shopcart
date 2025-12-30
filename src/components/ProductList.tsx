@@ -96,11 +96,20 @@ const ProductList: React.FC = () => {
           </p>
         </div>
       ) : (
-        <div className="products-grid">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <>
+          <div className="products-grid">
+            {filteredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+          <div className="more-products-banner">
+            <div className="more-products-content">
+              <div className="more-products-icon">🚀</div>
+              <h3 className="more-products-title">{t('products.moreComing')}</h3>
+              <p className="more-products-text">{t('products.moreComingText')}</p>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );

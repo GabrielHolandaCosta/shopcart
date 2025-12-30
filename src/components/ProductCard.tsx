@@ -13,15 +13,36 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
   const { language, t } = useLanguage();
+  const [imageError, setImageError] = React.useState(false);
 
   const handleAddToCart = () => {
     addToCart(product);
+  };
+
+  const handleImageError = () => {
+    setImageError(true);
   };
 
   const translatedName = getProductName(product.id, language);
 
   return (
     <div className="product-card">
+      <div className="product-image-container">
+        {!imageError ? (
+          <img 
+            src={product.image} 
+            alt={translatedName}
+            className="product-image"
+            loading="lazy"
+            onError={handleImageError}
+          />
+        ) : (
+          <div className="product-image-placeholder">
+            <span className="placeholder-icon">📷</span>
+            <span className="placeholder-text">{translatedName}</span>
+          </div>
+        )}
+      </div>
       <div className="product-info">
         <h3 className="product-name">{translatedName}</h3>
         <p className="product-price">{formatPrice(product.price, language)}</p>

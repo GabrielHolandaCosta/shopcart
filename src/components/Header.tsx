@@ -7,9 +7,10 @@ import './Header.css';
 
 interface HeaderProps {
   onCartClick: () => void;
+  onBackClick?: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
+const Header: React.FC<HeaderProps> = ({ onCartClick, onBackClick }) => {
   const { getTotalItems } = useCart();
   const { language, setLanguage, t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
@@ -44,7 +45,20 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="header-title">{t('header.title')}</h1>
+        <div className="header-left">
+          {onBackClick && (
+            <button className="back-button" onClick={onBackClick} aria-label="Voltar">
+              ← {t('header.back')}
+            </button>
+          )}
+          {onBackClick ? (
+            <button className="header-title-button" onClick={onBackClick} aria-label="Voltar para início">
+              <h1 className="header-title">{t('header.title')}</h1>
+            </button>
+          ) : (
+            <h1 className="header-title">{t('header.title')}</h1>
+          )}
+        </div>
         
         <div className="header-actions">
           <button

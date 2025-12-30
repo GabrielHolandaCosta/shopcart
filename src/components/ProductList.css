@@ -61,6 +61,72 @@
   color: var(--danger);
 }
 
+.more-products-banner {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.more-products-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.more-products-content {
+  position: relative;
+  z-index: 1;
+}
+
+.more-products-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.more-products-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.more-products-text {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  margin: 0;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .products-container {
     padding: 1.5rem 1rem;
@@ -77,6 +143,19 @@
 
   .products-header {
     margin-bottom: 1.5rem;
+  }
+
+  .more-products-banner {
+    padding: 2rem 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .more-products-title {
+    font-size: 1.5rem;
+  }
+
+  .more-products-text {
+    font-size: 1rem;
   }
 }
 
