@@ -8,11 +8,14 @@
 <p align="center">
   <img src="./public/image01.png" width="45%" />
   <img src="./public/image02.png" width="45%" />
-  <img src="./public/image03.png" width="45%" />
 </p>
 
 <p align="center">
+  <img src="./public/image03.png" width="45%" />
   <img src="./public/image04.png" width="45%" />
+</p>
+
+<p align="center">
   <img src="./public/image05.png" width="45%" />
   <img src="./public/image06.png" width="45%" />
 </p>
