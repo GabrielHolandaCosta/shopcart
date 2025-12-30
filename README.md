@@ -1,139 +1,167 @@
-# ShopCart - Mini E-commerce
+# ShopCart – Modern Mini E-commerce (Front-End Junior Portfolio)
 
-Um mini e-commerce moderno e responsivo construído com React, TypeScript e Vite.
+🔗 **Repository:** *(you are already here)*  
+🌐 **Live Demo (Vercel):** <a href="shopcart-bice.vercel.app" target="_blank">shopcart-bice.vercel.app</a>
 
-## 🚀 Funcionalidades
+## 📸 Project Preview
 
-- ✅ **Seletor de idioma** (Português, Inglês, Espanhol)
-- ✅ **Lista de produtos** com busca
-- ✅ **Carrinho de compras** com sidebar
-- ✅ **Persistência** no localStorage
-- ✅ **Design responsivo** (mobile + desktop)
-- ✅ **Tratamento de erros e loading**
+<p align="center">
+  <img src="./public/image01.png" width="45%" />
+  <img src="./public/image02.png" width="45%" />
+  <img src="./public/image03.png" width="45%" />
+</p>
 
-## 📋 Requisitos Atendidos
+<p align="center">
+  <img src="./public/image04.png" width="45%" />
+  <img src="./public/image05.png" width="45%" />
+  <img src="./public/image06.png" width="45%" />
+</p>
 
-### Tela de Produtos (Home)
-- [x] Seletor de idioma (PT, EN, ES)
-- [x] Lista de produtos com imagem, nome, preço
-- [x] Botão "Adicionar ao carrinho"
-- [x] Campo de busca por nome
-- [x] Responsividade completa
+---
 
-### Carrinho
-- [x] Mostrar itens com imagem, nome, preço, quantidade
-- [x] Subtotal por item
-- [x] Total geral
-- [x] Botão remover item
-- [x] Botões +/- para quantidade
-- [x] Empty state quando vazio
+## 🚀 Summary for Recruiters
 
-### Persistência
-- [x] Carrinho salvo no localStorage
-- [x] Idioma salvo no localStorage
+**ShopCart** is a clean, modern, and **fully responsive mini e-commerce UI** I **designed and built from scratch** using **React, TypeScript, and Vite** to demonstrate strong front-end fundamentals, real business logic, state architecture, persistence, and high attention to user experience.  
+The entire project was **shipped to production using Vercel**, reflecting my ability to deliver portfolio-grade applications that are structured, scalable, and ready for contribution.
 
-### Regras de Negócio
-- [x] Não duplicar itens (aumenta quantidade)
-- [x] Quantidade mínima 1
-- [x] Remover item completamente
-- [x] Total atualizado automaticamente
-- [x] Empty state quando carrinho vazio
+---
 
-## 🛠️ Tecnologias
+## ⚡ Quick Highlights
 
-- **React 18** - Biblioteca UI
-- **TypeScript** - Tipagem estática
-- **Vite** - Build tool e dev server
-- **CSS Modules** - Estilização
-- **Context API** - Gerenciamento de estado
+- ⚡ Fully responsive **Product Page + Cart Sidebar**
+- 🛒 Smart cart logic with **item merging (no duplicates)**
+- 💾 **localStorage persistence** (cart + language preferences)
+- 🌎 Internationalization (**pt-BR, English, Spanish**)
+- 🔍 Real-time **product search** with translated UI feedback
+- ♻️ **Context API architecture** + reusable components
+- 🧠 Business rules enforced (**min qty 1, auto totals update**)
+- ⚠️ UI includes **loading & error states** with smooth UX
+- 🚀 **Deployed on Vercel** (production preview ready)
+- 🧩 **Type-safe development** with clean folder structure
 
-## 📦 Instalação
+---
+
+## 🧩 Features
+
+- Multi-language selector (**PT, EN, ES**)
+- Product listing with **search and filters**
+- **Add to cart**
+- **Cart sidebar (drawer UI)**
+- **localStorage persistence**
+- Fully responsive (**mobile, tablet, desktop**)
+- **Loading & error handling**
+- **Accessibility** using `aria-label`
+- **Auto-updated totals and subtotals**
+
+---
+
+## 📋 Requirements Covered
+
+### 🏠 Product Page (Home)
+
+- [x] Language selector (**PT, EN, ES**)
+- [x] Product list (**image, name, price**)
+- [x] “Add to Cart” button
+- [x] Search field filtering by product name
+- [x] Fully responsive UI
+
+### 🛒 Cart Sidebar
+
+- [x] Shows items (**image, name, price, quantity**)
+- [x] Subtotal per item
+- [x] Global total
+- [x] Remove item button
+- [x] `+ / −` quantity controls
+- [x] Empty state UI when cart is empty
+
+### 💾 Persistence
+
+- [x] Cart stored in `localStorage`
+- [x] Selected language stored in `localStorage`
+
+### 🧠 Business Rules
+
+- [x] No duplicate cart items (**increments quantity instead**)
+- [x] Minimum quantity: **1**
+- [x] Full item removal supported
+- [x] Totals auto-updated dynamically
+- [x] Empty state UX handled professionally
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 18** – UI Library
+- **TypeScript** – Type safety & static typing
+- **Vite** – Dev server & bundler
+- **Context API** – State architecture
+- **CSS Modules / Utility styling** – Scoped & reusable styles
+- **Vercel** – Deployment & hosting
+
+---
+
+## 📦 Installation
 
 ```bash
-# Instalar dependências
+# Install dependencies
 npm install
 
-# Iniciar servidor de desenvolvimento
+# Start dev server
 npm run dev
 
-# Build para produção
+# Build for production
 npm run build
 
-# Preview do build
+# Preview production build
 npm run preview
 ```
 
-## 🎨 Estrutura do Projeto
+---
+
+## 🗂 Project Structure
 
 ```
 shopcart/
 ├── src/
-│   ├── components/      # Componentes React
-│   │   ├── Header.tsx
-│   │   ├── ProductList.tsx
-│   │   ├── ProductCard.tsx
-│   │   └── Cart.tsx
-│   ├── contexts/        # Context API
-│   │   ├── CartContext.tsx
-│   │   └── LanguageContext.tsx
-│   ├── i18n/           # Internacionalização
-│   │   ├── locales/
-│   │   │   ├── pt.json
-│   │   │   ├── en.json
-│   │   │   └── es.json
-│   │   └── index.ts
-│   ├── types/          # Tipos TypeScript
-│   │   └── index.ts
-│   ├── data/          # Dados mockados
-│   │   └── products.ts
+│   ├── components/      # UI Components
+│   ├── contexts/        # State (Cart + Language)
+│   ├── i18n/locales/    # Translations (PT, EN, ES)
+│   ├── data/            # Mock product data
+│   ├── types/           # TypeScript interfaces
 │   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
+│   └── main.tsx
 ├── package.json
-├── vite.config.ts
+├── vite.config.ts       # Aliases configured (@/ → src/)
 └── tsconfig.json
 ```
 
-## ✨ Destaques
+---
 
-- **TypeScript** para type safety
-- **Alias configurado** (@/ para src/)
-- **i18n completo** com arquivos JSON separados (PT, EN, ES)
-- **Formatação de preços** usando Intl.NumberFormat (EUR em todos os idiomas)
-- **Carrinho 100% funcional** com validações e regras de negócio
-- **Persistência** no localStorage (carrinho + idioma)
-- **Tratamento de erros** e estados de loading
-- **Validação de quantidade** (mínimo 1, botão desabilitado quando necessário)
-- **Acessibilidade** com aria-labels
-- **Performance** com lazy loading de imagens
-- **Animações suaves** para melhor UX
-- **Busca funcional** com mensagens traduzidas
+## 🎯 Next Steps *(Optional Enhancements)*
 
-## 🐛 Problemas Comuns Resolvidos
-
-- ✅ Alias do Vite configurado corretamente
-- ✅ Dependências no package.json
-- ✅ Componentes exportados corretamente
-- ✅ Tratamento de loading e erros
-- ✅ Sem variáveis não usadas
-- ✅ Build otimizado para produção
-
-## 📱 Responsividade
-
-O projeto é totalmente responsivo e funciona perfeitamente em:
-- 📱 Mobile (< 768px)
-- 💻 Tablet (768px - 1024px)
-- 🖥️ Desktop (> 1024px)
-
-## 🎯 Próximos Passos (Opcional)
-
-- [ ] Integração com API real
-- [ ] Autenticação de usuários
-- [ ] Checkout e pagamento
-- [ ] Histórico de pedidos
-- [ ] Avaliações de produtos
+- [ ] Real API integration
+- [ ] User authentication
+- [ ] Checkout & payment flow
+- [ ] Order history
+- [ ] Product reviews & ratings
 
 ---
 
-Desenvolvido com ❤️ usando React + TypeScript + Vite
+## 💼 Why this project matters?
 
+This project proves that I can:
+
+✔ design responsive UIs that look **modern and professional**  
+✔ implement **real front-end logic**, not just static pages  
+✔ structure projects using **scalable and clean architecture**  
+✔ ship **production-ready apps using Vercel**  
+✔ write **clean, modern, and type-safe front-end code**
+
+---
+
+🚀 **Built with passion, focus, and real hiring intent for a Front-End Junior role.**  
+I created, structured, developed, deployed, and validated every part of this project to show I’m ready to contribute immediately and grow within a professional team.
+
+---
+
+Developed with ❤️ using **React + TypeScript + Vite**
