@@ -1,6 +1,6 @@
 # ShopCart – Modern Mini E-commerce (Front-End Junior Portfolio)
 
-🔗 **Repository:** *(you are already here)*  
+🔗 **Repository:** <a href="shopcart-bice.vercel.app" target="_blank">shopcart-bice.vercel.app</a> 
 🌐 **Live Demo (Vercel):** <a href="shopcart-bice.vercel.app" target="_blank">shopcart-bice.vercel.app</a>
 
 ## 📸 Project Preview
